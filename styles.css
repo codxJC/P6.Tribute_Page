@@ -1,0 +1,56 @@
+:root {
+    box-sizing: border-box;  /*Applies border box sizing to the root element*/ 
+    font-size: 1rem;
+    line-height: 1.1;
+  }
+  
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit; /* Tells all other elements and pseudo-elements to inherit their box sizing */             
+  }
+
+  body {
+    max-width: 100vw;
+    font-family: Poppins;
+    /* margin: 0 5em; */
+  }
+
+  h1, h3, p, #img-caption {
+    text-align: center;
+  }
+
+  li {
+    margin: 1em 3em;
+    line-height: 1.5;
+  }
+
+  #img-div {
+   margin: 0 5em;
+    /* margin: 2em 3em; */
+    /* padding: 2em 3em; */
+    background-color: white;
+    border: 3px solid blue;
+    padding: 0.5em;
+  }
+
+  #image {
+    display: block;
+    margin: auto; /*to center image inside the container*/
+    max-width: 100%;
+  }
+
+  figcaption {
+    font-size: 1.1rem;
+    padding: 0.5em;
+  }
+
+  #quote {
+    font-size: 1.75rem;
+    /* letter-spacing: 1.5px; */
+    font-family: 'Cormorant';
+    font-style: italic;
+    /* text-align: right; */
+    border: 3px solid red;
+  }
+
