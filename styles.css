@@ -13,31 +13,36 @@
   body {
     max-width: 100vw;
     font-family: Poppins;
-    /* margin: 0 5em; */
   }
 
   h1, h3, p, #img-caption {
     text-align: center;
   }
 
+  ul {
+    padding-right: 2em;
+  }
+
   li {
-    margin: 1em 3em;
+    margin: 1em 4em;
     line-height: 1.5;
+    text-align: justify;
   }
 
   #img-div {
    margin: 0 5em;
-    /* margin: 2em 3em; */
-    /* padding: 2em 3em; */
-    background-color: white;
-    border: 3px solid blue;
-    padding: 0.5em;
+   background-color: white;
+   padding: 0.5em;
   }
 
   #image {
     display: block;
-    margin: auto; /*to center image inside the container*/
+    margin: auto; /* to center the image inside the container */
     max-width: 100%;
+    border: 0.5em solid black;
+    outline: 0.2em solid black; /* sets the inner border of the image */
+    outline-offset: -2.5em; /*sets the distance from the outer border */
+    padding: 2.5em;
   }
 
   figcaption {
@@ -45,12 +50,93 @@
     padding: 0.5em;
   }
 
-  #quote {
-    font-size: 1.75rem;
-    /* letter-spacing: 1.5px; */
-    font-family: 'Cormorant';
-    font-style: italic;
-    /* text-align: right; */
-    border: 3px solid red;
+  #quote-div {
+    padding: 0.75em 0;
+    margin-bottom: 1em;
   }
 
+  #quote {
+    font-size: 1.75rem;
+    font-family: 'Cormorant';
+    font-style: italic;
+    margin: 1em 3em;
+    background-color: #fafafa;
+    border: double rgb(73, 62, 62);
+  }
+
+  #footer {
+    color:blueviolet;
+    font-weight: bold;
+  }
+
+  /**************************************/
+  /***** Mobile Devices Up to 425px *****/
+  /**************************************/
+
+  @media (max-width: 425px) {        
+    :root {                          
+      font-size: 0.85em;            
+    } 
+
+    li {
+      margin: 1em 1.0em;
+      line-height: 1.2;
+    }
+
+    #image {
+      border: 0.4em solid black;
+      outline: 0.1em solid black;
+      outline-offset: -1.5em;
+      padding: 1em;
+    }
+
+    /* #quote-div {
+      padding: 0.5em 0;
+      margin-bottom: 0.75em;
+    } */
+
+    #quote {
+    font-size: 1.5rem;
+    padding: 0.5em;
+    }
+  }
+
+  /*************************************/
+  /***** Tablet Devices up to 768px*****/
+  /*************************************/
+  
+  @media (min-width: 426px) and (max-width: 768px) {        
+    :root {                          
+      font-size: 0.875em;            
+    } 
+
+    li {
+      margin: 1em 2em;
+      line-height: 1.2;
+    }
+
+    #image {
+      border: 0.4em solid black;
+      outline: 0.1em solid black;
+      outline-offset: -1.25em;
+      padding: 0.75em;
+    }
+
+    #quote {
+      font-size: 1.5rem;
+      padding: 0.5em;
+    }
+  }
+
+  /*************************************/
+  /***** Larger than 768px Devices *****/
+  /*************************************/
+  @media (min-width: 769px) {       
+    :root {                          
+      font-size: 1.1m;                
+    } 
+    
+    #quote {
+      padding: 0.5em;
+    }
+  }
