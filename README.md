@@ -1,7 +1,7 @@
 #### PROJECT SCOPE
 
 This is the freeCodeCamp project *"Build a Tribute Page"* - 
-which had to meet specific specs. 
+which had to meet specific requirements. 
 I also made the webpage responsive as an extra exercise, which was not part of the project.
 
 The two first rulesets of code I added to my CSS is something I used for the first time
